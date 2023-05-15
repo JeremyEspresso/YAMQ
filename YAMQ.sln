@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YAMQ", "src\YAMQ\YAMQ.csproj", "{6E5A520D-28E4-443B-BE37-EEBFD046D747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0E2E287-EF00-47A2-8296-9F6E91813E8F}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Packages.props = src\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{8B06FB06-8946-40F5-A28E-D90C72063EF7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YAMQ.Broker.Abstractions", "src\YAMQ.Broker.Abstractions\YAMQ.Broker.Abstractions.csproj", "{C552791D-8DBD-4BC8-AE07-57440C595F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YAMQ.Broker", "src\YAMQ.Broker\YAMQ.Broker.csproj", "{9B8AB1E1-E445-4644-9E69-6954783210AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7A9D045C-C435-4E21-B666-8690252ACA8C}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{33F94642-75AE-49D1-AB08-EEF0824B83FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{8C357371-BEB5-4213-AA53-E8D84D4BE680}"
+	ProjectSection(SolutionItems) = preProject
+		test\UnitTests\Directory.Build.props = test\UnitTests\Directory.Build.props
+		test\UnitTests\Directory.Packages.props = test\UnitTests\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YAMQ.Broker.UnitTests", "test\UnitTests\YAMQ.Broker.UnitTests\YAMQ.Broker.UnitTests.csproj", "{1A2F07C8-27D6-4CCC-80E1-85996F228091}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E5A520D-28E4-443B-BE37-EEBFD046D747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5A520D-28E4-443B-BE37-EEBFD046D747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5A520D-28E4-443B-BE37-EEBFD046D747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5A520D-28E4-443B-BE37-EEBFD046D747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C552791D-8DBD-4BC8-AE07-57440C595F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C552791D-8DBD-4BC8-AE07-57440C595F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C552791D-8DBD-4BC8-AE07-57440C595F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C552791D-8DBD-4BC8-AE07-57440C595F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8AB1E1-E445-4644-9E69-6954783210AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8AB1E1-E445-4644-9E69-6954783210AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8AB1E1-E445-4644-9E69-6954783210AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8AB1E1-E445-4644-9E69-6954783210AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2F07C8-27D6-4CCC-80E1-85996F228091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2F07C8-27D6-4CCC-80E1-85996F228091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2F07C8-27D6-4CCC-80E1-85996F228091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2F07C8-27D6-4CCC-80E1-85996F228091}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F3B9727-37EF-426C-B631-CEA208591FFF}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E5A520D-28E4-443B-BE37-EEBFD046D747} = {D0E2E287-EF00-47A2-8296-9F6E91813E8F}
+		{C552791D-8DBD-4BC8-AE07-57440C595F0C} = {D0E2E287-EF00-47A2-8296-9F6E91813E8F}
+		{9B8AB1E1-E445-4644-9E69-6954783210AD} = {D0E2E287-EF00-47A2-8296-9F6E91813E8F}
+		{8C357371-BEB5-4213-AA53-E8D84D4BE680} = {33F94642-75AE-49D1-AB08-EEF0824B83FD}
+		{1A2F07C8-27D6-4CCC-80E1-85996F228091} = {8C357371-BEB5-4213-AA53-E8D84D4BE680}
+	EndGlobalSection
+EndGlobal

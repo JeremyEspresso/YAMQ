@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\YAMQ.Broker.Abstractions\YAMQ.Broker.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

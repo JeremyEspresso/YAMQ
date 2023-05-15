@@ -1,0 +1,41 @@
+name: .NET Build & Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Build
+        run: |
+          dotnet restore
+          dotnet build -c Release --no-restore
+
+      - name: Archive build output
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: src/YAMQ/bin/Release/net7.0/
+
+      - name: Test
+        run: dotnet test -c Release --no-restore --no-build
+
+  build-image:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download build output
+        uses: actions/download-artifact@v3
+        with:
+            name: build-output
+
+      - name: Build Docker image
+        shell: bash
+        run: ls
